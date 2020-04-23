@@ -15,5 +15,8 @@ It's made for an **Introductory Level**.
 * Basic Movement
 * Simple Gameplay
 
+### Inspired By
+[Unity's Official Roll-a-ball Tutorial ](https://learn.unity.com/project/roll-a-ball-tutorial) but with a lot of differences, and bigger scope.
+
 ### Other Class Projects
 * [Grid Roguelike - Basic-Intermediate Level](https://github.com/MarcoElz/Unity-GridRoguelike)
