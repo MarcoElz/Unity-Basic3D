@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &8512305235459331001
+--- !u!1 &186411907768550327
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,47 +8,48 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 8512305235459330981}
-  - component: {fileID: 8512305235459330980}
-  - component: {fileID: 8512305235459331003}
-  - component: {fileID: 8512305235459331002}
-  - component: {fileID: 8512305235459330982}
+  - component: {fileID: 186411907768550332}
+  - component: {fileID: 186411907768550331}
+  - component: {fileID: 186411907768550330}
+  - component: {fileID: 186411907768550329}
+  - component: {fileID: 186411907768550328}
+  - component: {fileID: 2663403064418231217}
   m_Layer: 0
-  m_Name: Moneda
+  m_Name: CuboMalo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &8512305235459330981
+--- !u!4 &186411907768550332
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8512305235459331001}
+  m_GameObject: {fileID: 186411907768550327}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.85, y: 0.51067114, z: -2.38}
-  m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
+  m_LocalPosition: {x: 1.28, y: 0.5959511, z: 7.66}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &8512305235459330980
+--- !u!33 &186411907768550331
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8512305235459331001}
+  m_GameObject: {fileID: 186411907768550327}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!23 &8512305235459331003
+--- !u!23 &186411907768550330
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8512305235459331001}
+  m_GameObject: {fileID: 186411907768550327}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -60,7 +61,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: c881dbd5e42d9264e8c683b9a5bd1456, type: 2}
+  - {fileID: 2100000, guid: 2cb2937f5cda9564a99e09201702b390, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -81,30 +82,41 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!65 &8512305235459331002
+--- !u!65 &186411907768550329
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8512305235459331001}
+  m_GameObject: {fileID: 186411907768550327}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &8512305235459330982
+--- !u!114 &186411907768550328
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8512305235459331001}
+  m_GameObject: {fileID: 186411907768550327}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 72b1697c7d1e9ca449f5c76f48d4dee2, type: 3}
+  m_Script: {fileID: 11500000, guid: fae7ae56751b08948a68b9ff4d142973, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clip: {fileID: 8300000, guid: e282055872eecdc43a89c14a594715b3, type: 3}
-  rotationSpeed: 47
+  speed: 5
+--- !u!114 &2663403064418231217
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 186411907768550327}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c39336e39e4fed499281b70c6d0bda8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

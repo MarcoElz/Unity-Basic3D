@@ -12,7 +12,6 @@ public class Llave : MonoBehaviour
         //this.gameObject.SetActive(false);
         Destroy(this.gameObject);
 
-        puerta.SetActive(false);
     }
 
 }

@@ -2,15 +2,22 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
+    public Text coinText; 
+
     int coins;
 
     public void AddCoin()
     {
+
         coins++;
         Debug.Log("Coins: " + coins);
+
+        //Cambiar texto en pantalla
+        coinText.text = "Coins: " + coins;
     }
 
     public void GameOver()

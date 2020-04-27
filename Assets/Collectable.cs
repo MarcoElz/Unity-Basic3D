@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Collectable : MonoBehaviour
 {
+    public AudioClip clip;
     public float rotationSpeed;
 
     private void Update()
@@ -14,10 +15,14 @@ public class Collectable : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        AudioSource.PlayClipAtPoint(clip, this.transform.position);
+
         //this.gameObject.SetActive(false);
         Destroy(this.gameObject);
         GameManager gameManager = FindObjectOfType<GameManager>();
         gameManager.AddCoin();
+
+        Debug.Log("MONEDA: " + this.gameObject.name);
     }
 }
 

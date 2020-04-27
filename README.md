@@ -18,3 +18,8 @@ Inspired by [Unity's Official Roll-a-ball Tutorial ](https://learn.unity.com/pro
 
 ### Other Class Projects
 * [Grid Roguelike - Basic-Intermediate Level](https://github.com/MarcoElz/Unity-GridRoguelike)
+
+
+### Credits
+Music and SFX by Eric Matyas
+www.soundimage.org
