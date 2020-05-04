@@ -6,6 +6,8 @@ public class Keylock : MonoBehaviour
 {
     public GameObject door;
 
+    public int id;
+
     bool isDoorOpen;
 
     public void OpenDoor()
@@ -20,9 +22,15 @@ public class Keylock : MonoBehaviour
         if(!isDoorOpen)
         {
             Debug.Log("Trigger con keylock");
-            OpenDoor();
-            isDoorOpen = true;
-            this.gameObject.SetActive(false);
+
+            GameManager gameManager = FindObjectOfType<GameManager>();
+            if (gameManager.HasKey(id) || id < 0)
+            {
+                gameManager.ConsumeKey(id); //Usar llave
+                OpenDoor();
+                isDoorOpen = true;
+                this.gameObject.SetActive(false);
+            }
         }
     }
 }

@@ -4,14 +4,14 @@ using UnityEngine;
 
 public class Llave : MonoBehaviour
 {
-    public GameObject puerta;
+    public int id;
 
     private void OnTriggerEnter(Collider other)
     {
         Debug.Log("Toma llave");
-        //this.gameObject.SetActive(false);
         Destroy(this.gameObject);
 
+        GameManager gameManager = FindObjectOfType<GameManager>();
+        gameManager.AddKey(id);
     }
-
 }
