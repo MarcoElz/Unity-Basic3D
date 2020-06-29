@@ -16,9 +16,11 @@ Inspired by [Unity's Official Roll-a-ball Tutorial ](https://learn.unity.com/pro
 * Basic Movement
 * Simple Gameplay
 
-### Other Class Projects
-* [Grid Roguelike - Basic-Intermediate Level](https://github.com/MarcoElz/Unity-GridRoguelike)
-
+### Class Projects
+* [Basic 3D Game - Introductory Level](https://github.com/MarcoElz/Unity-Basic3D)
+* [Space Shooter 2D - Basic Level](https://github.com/MarcoElz/Unity_SpaceShooter2D)
+* [Grid-based Roguelike - Basic-Intermediate Level](https://github.com/MarcoElz/Unity-GridRoguelike)
+* [Tower Defense Game - Intermediate Level](https://github.com/MarcoElz/Unity-TowerDefense)
 
 ### Credits
 Music and SFX by Eric Matyas
